@@ -1,7 +1,22 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/*general styles*/
+
+body{font-family: 'Roboto Mono', monospace; font-size:12px; margin-top:0;
     margin: 0px;
-    background-color: black;
+    background-color:mintcream;
 }
+
+.nav-check {
+    position: absolute;
+    top: -3em;
+    }
+    .nav-check:checked ~ .nav {
+    display: block;
+    }
+
+    .nav-check:checked ~ .nav-label {
+        background-color: powderblue; 
+        }
 
 nav ul{
     list-style: none;
@@ -10,24 +25,29 @@ nav ul{
 }
 
 nav li{
-border-bottom: solid 1px black;
+border-bottom: solid .5px mintcream;
 margin: 15px 0px;
 padding: 5px 0px;
 }
 
 nav ul a {
     text-decoration: none;
-    color: black;
+    color: mintcream;
     text-transform: uppercase;
 }
+
+a:link {color:mintcream; text-align:center; text-decoration:none; background-color: none;} 
+a:visited {background-color:mintcream;}
+a:hover {background-color: #00a87e;} 
+a:active {background-color:#00a87e;} 
 
 nav li:first-child {
     margin-top: 0px;
 }
 
 nav{
-    background-color: mintcream;
-    padding: 30px;
+    background-color: rgb(85, 28, 6);
+    padding: 20px;
 }
 
 
@@ -35,11 +55,11 @@ nav{
     nav ul li {
         display: inline-block;
         margin-bottom: none;
-        margin-right: 2px solid black;
-        padding-bottom: 5px;
-        margin: 0px 20px;
+        margin-right: 2px solid rgb(85, 28, 6);
+        padding-bottom: 4px;
+        margin: 0px 15px;
     }
     nav {
-            padding: 0px 10px;
+            padding: 0px 5px;
         }
 }
