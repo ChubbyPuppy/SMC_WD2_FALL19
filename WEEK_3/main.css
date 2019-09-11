@@ -1,0 +1,136 @@
+@import url('colors.css');
+@import url('https://fonts.googleapis.com/css?family=Fredoka One');
+/*general styles*/
+
+
+body{font-family: 'Fredoka One', monospace; font-size:25px; margin-top:0;
+    margin: 0px;
+    background-color:mintcream;
+}
+
+header {
+    background-color: rgb(85, 28, 6);
+}
+
+header input#toggler {
+    display: none;
+}
+
+header label img {
+    width: 45px;
+    height: auto;
+    margin: 10px 10px 0px;
+}
+
+input#toggler:checked + nav {
+    display: block;
+}
+
+nav{
+    
+    padding: 30px 10px;
+    display: none;
+}
+
+.nav-check {
+    position: absolute;
+    top: -3em;
+    }
+    .nav-check:checked ~ .nav {
+    display: block;
+    }
+
+    .nav-check:checked ~ .nav-label {
+        background-color: powderblue; 
+        }
+
+nav ul{
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+}
+
+/*--------------MAIN------------*/
+
+.floater-section {
+    float: left;
+    min-height: 300px;
+    width: 100%;
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+nav li{
+border-bottom: solid .5px mintcream;
+margin: 15px 0px;
+padding: 5px 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(85, 28, 6);
+    text-transform: uppercase;
+}
+
+a:link {color:rgb(85, 28, 6); text-align:center; text-decoration:none; background-color: none;} 
+a:visited {background-color: none;}
+a:hover {background-color: #00a87e;} 
+a:active {background-color:#00a87e;} 
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav{
+    background-color: rgb(80, 255, 203);
+    padding: 20px;
+}
+
+
+@media(min-width: 540px){
+    nav ul li {
+        display: inline-block;
+        margin-bottom: none;
+        margin-right: 2px solid rgb(80, 255, 203);
+        padding-bottom: 4px;
+        margin: 0px 50px;
+    }
+    nav {
+            padding: 0px 5px;
+        }
+}
+
+/*MAIN*/
+
+.width-md-50 {
+    width: 50%;
+}
+
+.width-md-33 {
+    width: 33%;
+}
+
+/*end of 540px breakpoint*/
+
+@media (mid-width: 800px){
+    .width-lg-25 {
+        width: 25%;
+    }
+    
+    .width-lg-33 {
+        width: 33%
+    }
+
+    .width-lg-50 {
+        width: 50%
+    }
+
+    .width-lg-100 {
+        width: 100%;
+    }
+}
+
