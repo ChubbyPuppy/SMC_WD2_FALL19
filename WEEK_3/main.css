@@ -104,6 +104,11 @@ nav{
         }
 }
 
+main {
+    width: 1000px;
+    margin: 0px auto;
+}
+
 /*MAIN*/
 
 .width-md-50 {
@@ -115,6 +120,11 @@ nav{
 }
 
 /*end of 540px breakpoint*/
+
+img {
+    width: 50%;
+    text-align: center;
+}
 
 @media (mid-width: 800px){
     .width-lg-25 {
