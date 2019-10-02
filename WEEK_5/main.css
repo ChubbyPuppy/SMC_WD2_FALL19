@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+
+.Title {align-content: center;
+    width: 90%;  
+}
+
+body{font-family: 'Barlow Condensed', sans-serif; font-size:25px; margin-top:0;
+    margin: 0px;
+    background-color:rgb(97, 0, 81);
+}
+
+body {
+    margin: 0px;
+    background-image: linear-gradient(hotpink, rgb(250, 25, 201));
+}
+
+main {
+    width: 700px;
+    background-color: rgb(136, 237, 255);
+    border: rgb(185, 80, 255) double 10px;
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 50%;
+    border: black solid 3px;
+}
+
+.one {
+        display: inline-block;
+        text-align: center;
+}
+
+.two {
+    display: inline-block;
+    width: 26%;
+    position: relative;
+}
+
+.two img, .two h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.two h2 {
+    font-size: 20px;
+}
+
+.twoA {
+    height: 90px;
+}
+
+.twoB {
+    height: 90px;
+}
+
+.twoC {
+    height: 124px;
+}
+
+.twoAh {
+    height: 40px;
+}
+
+.twoBh {
+    height: 40px;
+}
+
+.twoCh {
+    height: 40px;
+}
+
+p {
+    font-size: 16px;
+}
+
