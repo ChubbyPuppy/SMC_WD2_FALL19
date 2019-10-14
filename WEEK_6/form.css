@@ -1,6 +1,6 @@
 ::-webkit-input-placeholder {
     color: #000a5f;  
-    font-family: 'Lora', serif;
+    font-family: 'Franklin Gothic Medium';
     font-size: 16px;
  }
  
@@ -14,7 +14,7 @@
  
  :-ms-input-placeholder {  
     color: #ffeeb6;  
-    font-family: 'Lora', serif;
+    font-family: 'Franklin Gothic Medium';
     font-size: 16px;
  }
 
@@ -44,7 +44,23 @@
     color: black;
     transition: 0.5s;
     border-radius: 10px;
-    font-family: 'Lora', serif;
+    font-size: 14px;
+}
+
+.contact-form-select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 16px 0;
+    border: 0;
+    background: #ffeeb6;
+    padding: 20px 20px;
+    outline: none;
+    color: black;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium';
     font-size: 14px;
 }
 
@@ -69,6 +85,10 @@
 }
 
 .contact-form-text:focus {
+    box-shadow: 0 0 5px 4px #ffeeb6;
+}
+
+.contact-form-btn:focus {
     box-shadow: 0 0 5px 4px #ffeeb6;
 }
 
