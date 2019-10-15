@@ -4,6 +4,7 @@
     width: 100%;
 }
 
+
 .container::after {
     clear: both;
     content: "";
@@ -12,6 +13,7 @@
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 .content {

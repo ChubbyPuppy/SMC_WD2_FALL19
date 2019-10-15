@@ -107,6 +107,12 @@ table{
 }
 
 
+p {text-align: center;
+    position: relative;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 .clearfix {
@@ -131,13 +137,18 @@ table{
     
 }
 
+.content-3 {
+    text-align: center;
+    position: relative;
+}
+
 h5 {position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000a5f;
   background-color: #ffd23e;
-  width: 90%;
+  width: 80%;
   box-shadow:  #ffd23e;
 }
 
@@ -229,8 +240,7 @@ h {
 
     h3 {
         font-size: 30px;
-        border-bottom: 2px #ffd23e groove;
-        padding: 20px;
+   
     }
 
     .yelp-section {
@@ -278,6 +288,11 @@ h {
     }
 
 
+}
+
+.content-3 {
+    text-align: center;
+    position: relative;
 }
 
 /* LARGE SIZED SCREENS */
