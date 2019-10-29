@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <button id="colorbutton">Pls click</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contentmain">
+            <h1>Henlo, honker!</h1>
+         </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        document.getElementById("colorbutton").addEventListener("click", function(){
+            console.log("It!");
+            document.getElementById("contentmain").style.backgroundColor = "rgb("+(Math.random()*255)+", "+ "245"+", 40)";
+        } )
+
+
+        document.getElementById("contentmain").style.backgroundColor = "rgb(255 , 0, 0)";
+
+    </script>
+</body>
+</html>

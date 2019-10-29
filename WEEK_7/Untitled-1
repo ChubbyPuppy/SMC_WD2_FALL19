@@ -1,0 +1,10 @@
+!
+
+<header>
+<nav id="navbar"></nav>
+
+</header>
+
+<main>
+<div id="contentmain"></div>
+</main>

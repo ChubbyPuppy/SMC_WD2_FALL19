@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>VAPORWAVE; THE SEQUEL</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <button id="colorbutton">VIBE CHECK BUTTON</button>
+            <button id="vaporwaveButton">PULSE THE VOID</button>
+            <button id="vaporwaveButton">VIBE CHECK BUTTON</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+        <div id="contentmain">
+            <h1>NOW THAT'S WHAT I CALL VAPORWAVE, PART 2</h1>
+         </div>
+        
+         <img id="vaporwaveImage" img src="void.webp" alt="vaporvoid">
+
+         </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+   
+    <script>
+        document.getElementById("colorbutton").addEventListener("click", function(){
+            console.log("It!");
+            var malContent = document.getElementById("contentmain");
+            var redComponent = "0";
+            var greenComponent = Math.random()*255;
+            var blueComponent = "255";
+
+            var compRGBstring = "rgb(" + redComponent + "," + greenComponent +"," + blueComponent + ")";
+            malContent.style.backgroundColor = compRGBstring;
+        } );
+
+        
+//Vaporwave
+ document.getElementById("vaporwaveButton").addEventListener("click",function(){
+            console.log("vaporvoid")
+        document.getElementById("vaporwaveImage").style.animation = "pulse 3s infinite alternate";
+        })
+
+    </script>
+</body>
+</html>

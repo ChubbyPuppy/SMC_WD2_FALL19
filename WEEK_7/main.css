@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+
+
+body{
+    background-image: url("https://media0.giphy.com/media/l1J9AQTK5KkYKRJPW/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 2000px 1500px;
+}
+
+#navBar{
+  text-align: center;
+  display: inline-block;
+
+}
+
+button {
+  background-color: #ad0739;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px 100px;
+  font-family:'Exo', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Turret Road', cursive;
+    font-size: 75px;
+    border: 10px #ec6faa solid;
+    border-radius: 8px;
+}
+
+
+#vaporwaveImage {
+    position: relative;
+    animation: moveSide 5s infinite;
+    animation-direction:alternate;
+  }
+  
+  @keyframes moveSide {
+    from {left: 0px;}
+    to {left: 400px;}
+  }
+
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+      left: 400px;
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.50, 1.50, 1.50);
+      transform: scale3d(1.50, 1.50, 1.50);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+      left: 0px;
+    }
+  }
+
+
+  /* MEDIUM SIZED SCREENS */
+
+@media(min-width:540px){
+    button {
+        text-align: center;
+        display: inline-block;
+        margin: 5px 100px;
+    }
+
+
+    img {
+        position: relative;
+    }
