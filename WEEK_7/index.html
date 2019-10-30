@@ -19,7 +19,7 @@
     <main>
         <div class="container">
         <div id="contentmain">
-            <h1>NOW THAT'S WHAT I CALL VAPORWAVE, PART 2</h1>
+            <h1 id="header1">"NOW THAT'S WHAT I CALL VAPORWAVE, PART 2"</h1>
          </div>
         
          <img id="vaporwaveImage" img src="void.webp" alt="vaporvoid">
@@ -60,7 +60,8 @@ alert("Vaporwave is dead. Long live Vaporwave.");
 //Text//
  document.getElementById("letterButton").addEventListener("click",function(){
             console.log("letter change");
-        document.getElementById("h1").style.willChange = "font";
+            document.getElementById("header1").style.fontFamily = "Impact";
+        document.getElementById("header1").innerHTML = "1 like = 1 :^)";
         });
         var fontType = ["Impact"]
         var fontSize = ["70px"]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <img src="https://scontent-sjc3-1.cdninstagram.com/vp/86aea5dc6184925a3eceebac2caa335a/5DC95457/t51.2885-15/e35/65933086_146474543101660_3663878258192986456_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com&ig_cache_key=MjA4NzM1NTYzOTkzMTEyMzQ0Ng%3D%3D.2" id="image" alt="yee">
+        <button id="imgToggle">Switch</button>
+    </section>
+
+    <script>
+    document.getElementById('imgToggle').addEventListener("click", function(){
+        var image2URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdK6o45Hfqyi_SCD5IFSIy_Jkzf1D46VRZcUx5DfJui7Idxks&s";
+        var image2Alt = "Wtf.";
+        var switchingImage = document.getElementById("image");
+
+        var image1URL = switchingImage.src;
+        var image1Alt = switchingImage.alt;
+
+        switchingImage.src = image2URL;
+        switchingImage.alt = image2Alt;
+
+        console.log(image1URL);
+
+        if (switchingImage.src == image2URL ){
+            switchingImage.src = image1URL;
+            switchingImage.src = image1Alt;
+        }
+        else {
+            switchingImage.src = image2URL;
+            switchingImage.alt = image2alt;
+        }
+    })
+    
+    </script>
+</body>
+</html>
