@@ -12,7 +12,7 @@
         <nav id="navbar">
             <button id="colorbutton">VIBE CHECK BUTTON</button>
             <button id="vaporwaveButton">PULSE THE VOID</button>
-            <button id="vaporwaveButton">VIBE CHECK BUTTON</button>
+            <button id="letterButton">VAPORWAVE TRACK TIME</button>
         </nav>
     </header>
 
@@ -34,6 +34,9 @@
 
    
     <script>
+
+alert("Vaporwave is dead. Long live Vaporwave.");
+
         document.getElementById("colorbutton").addEventListener("click", function(){
             console.log("It!");
             var malContent = document.getElementById("contentmain");
@@ -45,13 +48,32 @@
             malContent.style.backgroundColor = compRGBstring;
         } );
 
-        
-//Vaporwave
+//Vaporwave//
  document.getElementById("vaporwaveButton").addEventListener("click",function(){
-            console.log("vaporvoid")
+            console.log("vaporvoid");
         document.getElementById("vaporwaveImage").style.animation = "pulse 3s infinite alternate";
-        })
+        });
+    </script>
 
+
+<script>
+//Text//
+ document.getElementById("letterButton").addEventListener("click",function(){
+            console.log("letter change");
+        document.getElementById("h1").style.willChange = "font";
+        });
+        var fontType = ["Impact"]
+        var fontSize = ["70px"]
+        var fontStyle = ["normal"]
+
+    </script>
+
+
+</script>
+
+
+
+    <script>
     </script>
 </body>
 </html>
