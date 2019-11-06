@@ -3,7 +3,8 @@
 
 body {
     background-repeat: no-repeat;
-    background-size: 1250px;
+    background-size: 100%;
+    background-position: top;
     background-blend-mode: lighten;
     margin: 0px;
 }
@@ -32,7 +33,7 @@ h1{ font-family: 'McLaren', cursive;
     color: rgb(255, 151, 156);
     text-align: center;
     margin: 0px;
-    font-size: 90px;
+    font-size: 70px;
 }
 
 .burger-class {
