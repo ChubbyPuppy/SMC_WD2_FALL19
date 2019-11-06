@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
 
-main.before {
-    opacity: 0.6;
-}
 
 body {
     background-repeat: no-repeat;
@@ -51,8 +48,9 @@ p{  font-family: 'McLaren', cursive;
 h2{
     font-family: 'McLaren', cursive;
     -webkit-text-stroke: 1px rgb(255, 151, 156);
-    font-size: 15px;
+    font-size: 50px;
     margin: 20px; 
+    text-align: center;
 }
 
 .pos-relative {

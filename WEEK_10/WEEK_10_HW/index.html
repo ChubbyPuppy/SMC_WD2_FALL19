@@ -76,22 +76,20 @@
     var classSelect = document.getElementById('burger-class');
     var burgerText = document.getElementById('text');
     var fontType = ["McLaren"]
-    document.getElementById("burger-background").style.opacity = "0.6";
-
-
     // var burgerText = document.createTextNode("This is a paragraph.");
+
     classSelect.addEventListener('change', function () {
         console.log(classSelect.value);
 
-        if (classSelect.value === 'Beff Hamborgah') {
+        if (classSelect.value === 'beff') {
             burgerText.innerHTML = 'Beff people will be blessed with beff borgah!';        
         }
 
-        if (classSelect.value === 'Cheekin Hamborgah') {
+        if (classSelect.value === 'cheekin') {
             burgerText.innerHTML = 'Cheekin people will be blessed with cheekin borgah!';
         }
 
-        if (classSelect.value === 'Feesh Hamborgah') {
+        if (classSelect.value === 'feesh') {
             burgerText.innerHTML = 'Feesh people will be blessed with feesh borgah!';
         }
 
