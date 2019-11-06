@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+
+main.before {
+    opacity: 0.6;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 1250px;
+    background-blend-mode: lighten;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(255, 151, 156);
+    padding-bottom: 15px;
+}
+
+header input#toggler {
+    display: none;
+}
+
+header label img {
+    width: 100px;
+    height: auto;
+    margin: 10px 0px 0px 10px;
+}
+
+input#toggler:checked+nav {
+    display: block;
+}
+
+h1{ font-family: 'McLaren', cursive;
+    -webkit-text-stroke: 1px black;
+    color: rgb(255, 151, 156);
+    text-align: center;
+    margin: 0px;
+    font-size: 90px;
+}
+
+.burger-class {
+    text-align: center;
+}
+
+p{  font-family: 'McLaren', cursive;
+    -webkit-text-stroke: 1px rgb(255, 151, 156);
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+}
+
+h2{
+    font-family: 'McLaren', cursive;
+    -webkit-text-stroke: 1px rgb(255, 151, 156);
+    font-size: 15px;
+    margin: 20px; 
+}
+
+.pos-relative {
+    position: relative;
+}
+
+nav{
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.v-h-centered-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media(min-width:540px) {
+    .container {
+        width: 520px;
+        margin: auto;
+    }
+}
+
+@media(min-width:800px) {
+    .container {
+        width: 760px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Week 10 Homework</title>
+</head>
+
+
+<body>
+    <header class="pos-relative">
+           
+                <label for="toggler" id="imgToggle">
+                    <img src="file:///Users/chubbypuppy/Documents/SMC_WD2_FALL19/WEEK_10/WEEK_10_HW/hamburgermenuclosed.png" id="imageToSwitch"
+                        alt="burger_menu_closed">
+                </label>
+          
+        <input type="checkbox" id="toggler">
+        <nav class="v-h-centered-block">
+          
+            <p>Choose Borgah:</p>
+                <form action="" method="GET">
+                    <select id="burger-class">
+                        <option value="beff">Beff</option>
+                        <option value="cheekin">Cheekin</option>
+                        <option value="feesh">Feesh</option>
+                    </select>
+                </form>
+           
+            </nav>
+    </header>
+
+<div id="burger-background">
+        <body background="https://i.pinimg.com/originals/0c/d5/ca/0cd5ca5511559ee4f7c7044904374fd4.png">
+</div>
+
+    <main>
+        <div class="container">
+        <h1>BorgahLand</h1>
+            <h2 id="text"></h2>
+        </div>
+    </main>
+
+</body>
+
+</html>
+
+<script>
+    //Image Switch//
+    var image2URL = "file:///Users/chubbypuppy/Documents/SMC_WD2_FALL19/WEEK_10/WEEK_10_HW/hamburgermenuopen.png";
+    var image2ALT = "Burger open";
+    var switchingImage = document.getElementById("imageToSwitch");
+
+    var image1URL = switchingImage.src;
+    var image1ALT = switchingImage.alt;
+
+    document.getElementById('imgToggle').addEventListener('click', function () {
+        console.log(image1URL);
+
+        if (switchingImage.src === image2URL) {
+            switchingImage.src = image1URL;
+            switchingImage.alt = image1ALT;
+        } else {
+            switchingImage.src = image2URL;
+            switchingImage.alt = image2ALT;
+        }
+    })
+    
+
+    //Option Javascript//
+    var classSelect = document.getElementById('burger-class');
+    var burgerText = document.getElementById('text');
+    var fontType = ["McLaren"]
+    document.getElementById("burger-background").style.opacity = "0.6";
+
+
+    // var burgerText = document.createTextNode("This is a paragraph.");
+    classSelect.addEventListener('change', function () {
+        console.log(classSelect.value);
+
+        if (classSelect.value === 'Beff Hamborgah') {
+            burgerText.innerHTML = 'Beff people will be blessed with beff borgah!';        
+        }
+
+        if (classSelect.value === 'Cheekin Hamborgah') {
+            burgerText.innerHTML = 'Cheekin people will be blessed with cheekin borgah!';
+        }
+
+        if (classSelect.value === 'Feesh Hamborgah') {
+            burgerText.innerHTML = 'Feesh people will be blessed with feesh borgah!';
+        }
+
+    })
+    
+</script>
