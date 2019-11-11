@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Week 11 Homework: I Have No Mouth and I Must Scream</title>
+</head>
+
+    <style>
+        h1{
+            color: white;
+            text-shadow: 1px 1px 5px black;
+        }
+    
+        h2{
+            color: white;
+            text-shadow: 1px 1px 5px black;
+            padding: 30px 30px;
+        }
+
+        p{
+            color: white;
+            text-align: justify;
+            background-color: rgb(186, 232, 243, 0.4);
+            text-shadow: 1px 1px 5px black;
+            max-width: 75%;
+            margin: 0 auto 30px;
+        }
+    </style>
+
+<body>
+    <header>
+            <label for="toggler" class="imgToggle">
+                    <img src="eye.png" alt="eye_denied_access" class="icon">
+                    <img src="eye_2.png" alt="eye_access_accepted" class="icon" id="imgToSwitch">
+                </label>
+                <input type="checkbox" id="toggler">
+        <nav>
+            <div class="buttons"> 
+                <button role="buttons" class="button-clone">Multiply</button>
+                <button role="buttons" class="button-replace">Reveal</button>
+                <button role="buttons" class="button-empty">Destroy</button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="scream-background">
+            <body background="background.gif">
+    </div>
+
+    <main>
+        <div class="container">
+            <h1>I HAVE NO MOUTH AND I MUST SCREAM</h1>
+            <div class="div-paragraph">
+                <p>I am a great soft jelly thing. 
+                    Smoothly rounded, with no mouth, with pulsing white holes filled by fog where my eyes used to be.
+                    
+                    Rubbery appendages that were once my arms; bulks rounding down into legless humps of soft slippery matter.
+                    
+                    I leave a moist trail when I move. Blotches of diseased, evil gray come and go on my surface, as though light is being beamed from within.
+                    
+                    Outwardly: dumbly, I shamble about, a thing that could never have been known as human, 
+                    
+                    a thing whose shape is so alien a travesty that humanity becomes more obscene for the vague resemblance. 
+                    
+                    Inwardly: alone. Here. Living under the land, under the sea, in the belly of AM, whom we created because our time was badly spent 
+                    
+                    and we must have known unconsciously that he could do it better.
+                     
+                    At least the four of them are safe at last. AM will be all the madder for that. It makes me a little happier.
+                     
+                    And yet ... AM has won, simply ... he has taken his revenge ...</p>
+            </div>
+
+            <div class="div-image">
+                    <img src="jelly.png" alt="Jelly Monster">
+            </div>
+
+            <h2 class="AM">Cogito, Ergo Sum</h2>
+        </div>
+    </main>
+    
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.imgToggle').click(function(){
+            $('.icon').toggle();
+        })
+
+        $('.button-empty').click(function(){
+            $('.div-image').empty();
+        })
+
+        $('.button-clone').click(function(){
+            $('.AM').clone().appendTo("body");
+        })
+
+        $('.button-replace').click(function(){
+            $('<h2>I think, therefore I AM.</h2>').replaceAll('.AM');
+        })
+
+    });
+</script>

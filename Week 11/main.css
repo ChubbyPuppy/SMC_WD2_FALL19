@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+body {
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: top;
+    background-blend-mode: lighten;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(22, 20, 20);
+    padding: 15px;
+}
+
+nav{
+    text-align: center;
+    display: none;
+    float: inherit;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+header input#toggler {
+    display: none;
+}
+
+input#toggler:checked+nav {
+    display: block;
+}
+
+
+.icon{
+    height: 40px;
+}
+
+#imgToSwitch {
+    display: none;
+}
+
+button[class^="button-"]{
+    background-color:rgb(190, 222, 231);
+    color: black;
+    padding: 5px 50px;
+    margin: 9px 20px;
+    border-radius: 5px;
+    border: none;
+    align-content: center;
+    font-family: 'Rajdhani', sans-serif;;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
+h1{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 45px;
+}
+
+h2{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.div-paragraph{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.div-image{
+    text-align: center;
+    width: 100%;
+}
+
+
+/*imgToggle Button Edit*/
+
+.imgToggle input {
+	line-height: 40px;
+}
+
+.imgToggle input::-webkit-input-placeholder {
+   color: #888;
+}
+
+.imgToggle input:-moz-placeholder {
+   color: #888;
+}
+
+.imgToggle input:focus {
+	animation: glow 800ms ease-out infinite alternate;
+	background: #222922;
+	background: linear-gradient(#333933, #222922);
+	border-color: #393;
+	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+	color: #efe;
+	outline: none;
+}
+
+.imgToggle input:focus::-webkit-input-placeholder { 
+	color: #efe;
+}
+
+.imgToggle input:focus:-moz-placeholder {
+	color: #efe;
+}
+
+.imgToggle button:hover,
+.imgToggle button:focus {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	color: #5f5;
+	outline: none;
+}
+
+.imgToggle button:active {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+	top: 1px;
+}
+
+@keyframes glow {
+    0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
+    }
+}
