@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Tomorrow&display=swap');
+@import url(layout.css);
+
+ .container {
+    width: 100%;
+    margin: auto;
+}
+
+.gallery {
+    margin: 10px 50px;
+}
+
+h1{
+    font-family: 'Tomorrow', sans-serif;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+h2{
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 5px;
+    color: white;
+}
+
+p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+    margin: 5px;
+    color: white;
+}
+
+
+.img{
+    padding: 10px;
+    filter: grayscale (100%);
+    transition: 1s;
+}
+
+.img:hover{
+    filter: grayscale (0);
+    transform: scale(1.1);
+}
+
+@media(min-width:540px){
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media(min-width:800px){
+
+    .gallery{
+        max-width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    .bottom{
+        position: relative;
+        top: 210px;
+    }
+}
