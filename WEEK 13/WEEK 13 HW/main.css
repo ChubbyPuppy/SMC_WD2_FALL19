@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
+body {
+    margin: 0px;
+}
+.navbar {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar img {
+    width: auto;
+    height: 60px;
+    display: inline-block;
+}
+
+.navbar-item {
+    margin: 10px;
+    font-family: 'Alatsi', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(35, 35, 175);
+}
+
+a.active {
+    color:magenta; 
+    text-decoration: dotted;
+}
+
+a:hover:not(.active) {
+    color: magenta;
+}
+
+
+h1 {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    font-size: 70px;
+    margin: 15px;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.flexcontainer img {
+    width: 100%;
+    height: auto;
+}
+
+.flexcontainer {
+    background-color: rgb(35, 35, 175);
+    display: flex;
+    /* flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: baseline;
+    height: 400px; */
+}
+
+.flexitem {
+    margin: 10px;
+    /* order: 3;
+    flex-grow: 3; */
+}
+
+.flexitem:nth-child(1){
+    background-color: red;
+}
+
+.flexitem:nth-child(2){
+    background-color: orange; 
+}
+
+.flexitem:nth-child(3){
+    background-color: yellow;
+}
+
+.flexitem:nth-child(4){
+    background-color: green;
+}
+
+.flexitem:nth-child(5){
+    background-color: blue;
+}
+
+.flexitem:nth-child(6){
+    background-color: purple;
+}
