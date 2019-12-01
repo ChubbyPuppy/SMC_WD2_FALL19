@@ -4,7 +4,6 @@
 body {
     margin: 0px;
 }
-
 .navbar {
     background-color: lightpink;
     display: flex;
@@ -34,12 +33,12 @@ a{
 }
 
 a.active {
-    color: rgb(231, 86, 110); 
+    color:magenta; 
     text-decoration: dotted;
 }
 
 a:hover:not(.active) {
-    color: whitesmoke;
+    color: magenta;
 }
 
 
@@ -49,13 +48,9 @@ h1 {
     font-size: 70px;
     margin: 15px;
     width: 100%;
-    stroke-width: 10%;
-    color: whitesmoke;
-    order: 1;
 }
 
 h2 {
-    order: 3;
     font-family: 'Alatsi', sans-serif;
     text-align: center;
     font-size: 40px;
@@ -65,7 +60,6 @@ h2 {
 }
 
 .flexcontainer img {
-    order: 2;
     width: 100%;
     height: auto;
 }
@@ -81,31 +75,32 @@ h2 {
     height: 400px; */
 }
 
-.flex-item {
+.flexitem {
+    margin: 10px;
     /* order: 3;
     flex-grow: 3; */
 }
 
-.flex-item:nth-child(1){
-    order: 1;
+.flexitem:nth-child(1){
+    background-color: red;
 }
 
-.flex-item:nth-child(2){
-    order: 2;
+.flexitem:nth-child(2){
+    background-color: orange; 
 }
 
-.flex-item:nth-child(3){
-    order: 3;
+.flexitem:nth-child(3){
+    background-color: yellow;
 }
 
-.flex-item:nth-child(4){
-    order: 4;
+.flexitem:nth-child(4){
+    background-color: green;
 }
 
-.flex-item:nth-child(5){
-    order: 5;
+.flexitem:nth-child(5){
+    background-color: blue;
 }
 
-.flex-item:nth-child(6){
-    order: 6;
+.flexitem:nth-child(6){
+    background-color: purple;
 }
