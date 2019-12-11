@@ -1,0 +1,61 @@
+/*------- BLOG -------*/
+
+.main-content {
+    background-color: rgb(36, 66, 51);
+    display: flex; 
+    margin: auto;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    width: 80%;
+    
+}
+
+.blog-card{
+    width: 80%;
+    margin-left: 20px;
+}
+
+.blog-pic-img{
+   
+    width: 300px;
+    background-position-x: 40%;
+}
+
+.blog-header{
+    font-size: 36px;
+    font-family: 'Sulphur Point', sans-serif;
+    text-transform: uppercase;
+    color: seashell;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.blog-subheader{
+    font-family: 'Sulphur Point', sans-serif;
+    color: seashell;
+    font-size: 14px;
+    line-height: 20pt;
+}
+
+.blog-copy{
+    font-family: 'Sulphur Point', sans-serif;
+    color: seashell;
+    font-size: 16px;
+    line-height: 20pt;
+}
+
+.blog-side-img{
+    display: none;
+}
+
+.video{
+    width: 360px;
+}
+
+aside {
+
+}

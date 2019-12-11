@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="layout.css">
+
+</head>
+
+<header>
+        <ul class="top">
+                <li class="contact">Check out our social media:</li>
+                    <li>
+                        <ul class="icon-wrapper">
+                            <li> <a href="https://www.facebook.com/STAREcoStation/" target="_blank">
+                                <img src="images/icons/fb.png"></a></li>
+                            <li> <a href="https://www.instagram.com/starecostation/" target="_blank"> 
+                                <img src="images/icons/ig.png"></a></li>
+                            <li> <a href="https://twitter.com/starecostation" target="_blank">
+                                <img src="images/icons/twtr.png" target="_blank"></a></li>
+                        </ul>
+                    </li>
+        </ul>
+
+        <div class="bottom">
+            <div class="logo">
+                    <a href="index.html">
+                        <div id="logo-big"><img src="star eco station_logo.png"></div>
+                    </a>
+                    <a href="index.html">
+                        <div id="logo-small"><img src="star eco station_logo.png"></div>
+                    </a>
+                </div>
+        
+            <div>
+                <ul class="menu-container">
+                    <a href="index.html" class="nav-item logo true"><img src="star eco station_logo.png" alt="Eco Logo"></a>
+                    <li> <a href="about.html" class="desktop-menu-item">About</a></li>
+                    <li> <a href="blog.html" class="desktop-menu-item">Blog</a></li>
+                    <li> <a href="donate.html" class="desktop-menu-item">Donate</a></li>
+                </ul>
+            </div>
+
+            <nav class="desktop-menu">
+                    <ul>
+                        <li> <a href="index.html" class="desktop-menu-item active ">Home</a></li>
+                        <li> <a href="about.html" class="desktop-menu-item">About</a></li>
+                        <li> <a href="blog.html" class="desktop-menu-item">Blog</a></li>
+                        <li> <a href="donate.html" class="desktop-menu-item">Donate</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+
+        <div id="home-header-img" class="header-img">
+                <div class="gradient-overlay">
+        
+                </div>
+        
+                <h1 class="header-img-text">ABOUT STAR ECO STATION</h1>
+                <p class="header-img-subtext">Environmental Science Museum & Exotic Wildlife Rescue Facility</p>
+            </div>
+
+
+
+
+            <div id="image-gallery">
+        
+                <div class="three-boxes">
+        
+                    <div class="card">
+                        <img src="images/about/aboutus.jpg" alt="">
+                        <div class="content">
+                            <h3 class="card-subHeading">ALL ABOUT US</h3>
+                            <p class="card-text">Our brief summary that makes our identity in our community.<br> 
+                                <a href="https://www.ecostation.org/about-us">Learn More</a></p>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img src="images/about/allies.jpg" alt="">
+                        <div class="content">
+                            <h3 class="card-subHeading">OUR ALLIES</h3>
+                            <p class="card-text">Our volunteers, our allies, our family that help reach our goals.
+                                <br>
+                                <a href="https://www.ecostation.org/partners">Learn More</a></p>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img src="images/about/accolades.jpg" alt="">
+                        <div class="content">
+                            <h3 class="card-subHeading">ACCOLADES</h3>
+                            <p class="card-text">A list of accomodations that Star Eco Station earned through our dedication.<br>
+        
+                                <a href="https://www.ecostation.org/accolades-">Learn More</a></p>
+                        </div>
+                    </div>      
+                </div>
+   
+                <button id="view-more">
+                        View Gallery
+                    </button>
+</header>
+
+    <footer>
+
+        <!-- <ul class="top">
+            <li>Home</li>
+            <li> <a href="index.html" class="desktop-menu-item active ">Home</a></li>
+            <li> <a href="about.html" class="desktop-menu-item">About</a></li>
+            <li> <a href="blog.html" class="desktop-menu-item">Blog</a></li>
+            <li> <a href="donate.html" class="desktop-menu-item">Donate</a></li>
+        </ul> -->
+
+
+        <div class="main">
+            <div class="left inner-main">
+                <img src="images/icons/star eco station_footer_logo.png" alt="eco_footer">
+
+                <p>STAR Eco Station is a division of STAR Inc., a 501(c)(3) non-profit educational organization. Click here to learn more about STAR Inc. 
+                        © STAR Inc. All rights reserved.  </p>
+                <p> Terms & Conditions | Private Policy</p>
+            </div>
+
+            <div class="right inner-main">
+                <h2 class="footer-header">Contact Info</h2>
+                <ul class="contact-container">
+                    <li><img src="" alt=""> 10101 Jefferson Boulevard Culver City, CA 90232</li>
+                    <li><img src="" alt=""> Tel: 310-842-8060 | Fax (424)543-2447</li>
+                    <li><img src="" alt=""> Email: EcoStation@starinc.org </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="footer-bottom">
+            <div>© Star Eco Station 2019</div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+
+    <script>
+            var viewMoreBtn = $('#view-more');
+            var imageGallery = $('#image-gallery');
+    
+            viewMoreBtn.click(function () {
+    
+                // Adds html
+                imageGallery.append(htmlImgGallery);
+    
+    
+                // Removes event listener, this way, when you click on the view more
+                // button, nothing happens
+                viewMoreBtn.unbind('click');
+            });
+
+    function htmlImgGallery() {
+        var html = `
+        <div class="three-boxes">
+                <div class="card">
+                    <img src="images/about/1.png" alt="">
+                   
+                </div>
+        
+                <div class="card">
+                    <img src="images/about/2.png" alt="">
+                    
+                </div>
+        
+                <div class="card">
+                
+                        <img src="images/about/3.png" alt="">
+              
+            </div>
+        
+        
+        </div>
+
+        <div class="three-boxes">
+                <div class="card">
+                    <img src="images/about/4.png" alt="">
+                   
+                </div>
+        
+                <div class="card">
+                    <img src="images/about/5.png" alt="">
+                    
+                </div>
+        
+                <div class="card">
+                
+                        <img src="images/about/6.png" alt="">
+               
+                
+              
+            </div>
+        
+        
+        </div>
+
+           
+        `;
+
+        return html;
+    }
+    </script>
+<body>
+
+
+
+    
+</body>
+</html>
+

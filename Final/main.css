@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+/* Add page layout */
+@import url("layout.css");
+@import url("donate.css");
+
+body{
+    padding: 0;
+    margin: 0px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden,
+.caption,
+.true {
+    display: none;
+}
+
+/* ------ EFFECTS/BUTTONS ------ */
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+  color: rgb(169, 238, 192);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+a:hover {
+  color: #e08803;
+  text-shadow:0px 0px 30px #cf7908;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+b:link {
+    text-decoration: none;
+}
+
+b {
+  color: rgb(36, 66, 51);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+b:hover {
+  color: #e08803;
+  text-shadow:0px 0px 30px #cf7908;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#view-more button {
+
+    align-items: flex center;
+}
+
+#view-more {
+
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(36, 66, 51);
+    display: block;
+    font-family: 'Sulphur Point', sans-serif;
+    color: white;
+    text-align: center;
+    width: 200px;
+    /*needed a width, otherwise stretches to entire screen*/
+    margin: auto;
+    margin-bottom: 50px;
+    /*works on a block element*/
+    box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
+}
+
+/*------ MOBILE VIEW ------*/
+
+#mobile-menu {
+    display: flex;
+    align-items: center;
+}
+
+
+#mobile-menu #hamburger-icon {
+    width: 30px;
+    display: flex;
+    right: 26px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+
+    /* background-color: white; */
+    background-color: #e6ad23;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px 5px 15px 5px;
+    box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.51);
+}
+
+
+
+#mobile-menu #hamburger-icon span {
+    width: 30px;
+    height: 3px;
+    border-radius: 15px 5px 15px 5px;
+    background-color: white;
+    margin-bottom: 4px;
+
+}
+
+#logo-big {
+    display: none;
+}
+
+#logo-big {
+    width: 50px;
+}
+
+
+
+#mobile-menu .menu-container {
+    position: fixed;
+    /* background-color: #f0f0f0; */
+    /* background-color: #006438; */
+    /* background-color: darkgray; */
+    background-color: rgb(17, 59, 30);
+    opacity: .95;
+    box-shadow: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-top: 120px;
+    padding-right: 40px;
+    /* animations */
+    transform: translateX(100%);
+    transition: transform 200ms ease;
+}
+
+#mobile-menu.open .menu-container {
+    transform: translateX(0%);
+    box-shadow: -9px 0px 100px -49px;
+}
+
+/* #mobile-menu.open  #hamburger-icon span{
+   display: none;
+} */
+
+/* #mobile-menu.open  #hamburger-icon-x{
+    display: none;
+ }
+
+ #mobile-menu  #hamburger-icon-x{
+    display: none;
+ } */
+
+
+
+#mobile-menu .menu-container li {
+    margin-bottom: 30px;
+}
+
+/*------INDEX LINKS ------*/
+
+.take-action-div {
+    align-items: flex center;
+}
+
+.take-action {
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(36, 66, 51);
+    display: block;
+    font-family: 'Sulphur Point', sans-serif;
+    color: white;
+    text-align: center;
+    width: 200px;
+    /*needed a width, otherwise stretches to entire screen*/
+    margin: auto;
+    /*works on a block element*/
+    box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
+}
+
+#view-more button {
+
+    align-items: flex center;
+}
+
+#view-more {
+
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 15px 5px 15px 5px;
+    background-color: rgb(169, 238, 192);
+    display: block;
+    font-family: 'webfont';
+    color: rgb(36, 66, 51);
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
+}
+
+
+
+/* ------ FIRST NAV ------- */
+
+header .top {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    background-color: rgb(36, 66, 51);
+    padding: 3px 20px;
+    height: 25px;
+}
+
+header .top li {
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: 'Sulphur Point', sans-serif;
+    color: white;
+
+}
+
+.contact {
+    display: inline-flex;
+    top: 20px;
+    margin-top: 3px;
+
+}
+
+
+header .top .icon-wrapper {
+    display: flex;
+}
+
+header .top .icon-wrapper img {
+    width: 20px;
+}
+
+
+
+/* ------ MAIN NAV ------ */
+
+header {
+    box-shadow: 0px 0px 35px 8px rgba(0, 0, 0, 0.75);
+
+}
+
+#logo-big {
+    display: none;
+}
+
+#logo-big {
+    width: 50px;
+}
+
+.desktop-menu-item {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(19, 13, 11);
+}
+
+header .bottom ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+header .bottom ul li {
+    margin-left: 40px;
+    font-size: 28px;
+    font-family: 'Sulphur Point', sans-serif;
+    color: rgb(19, 13, 11);
+    letter-spacing: 2px;
+}
+
+header .bottom {
+    background-color: rgb(169, 238, 192);
+    background-image: url('plants.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+header .bottom .desktop-menu {
+    display: none;
+}
+
+/* ------- BANNERS ------- */
+
+.header-img {
+    /* position: relative; */
+    /* background-color: palevioletred; */
+    height: 400px;
+    width: 100%;
+    background-image: cover;
+    background-size: cover;
+
+
+
+
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+
+.header-img .gradient-overlay {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.73));
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#home-header-img {
+    background-image: url('images/animals/sulcata_tortoise.png');
+}
+
+.header-img-text {
+    font-size: 36px;
+    font-family: 'Sulphur Point', sans-serif;
+    color: white;
+    position: relative;
+    text-shadow: 2px 2px 9px #190B07;
+}
+
+.header-img-subtext {
+    font-size: 24px;
+    bottom: 9%;
+    left: 30px;
+    font-family: 'Sulphur Point', sans-serif;
+    color: white;
+    position: absolute;
+
+    text-shadow: 2px 2px 9px #190B07;
+
+}
+
+/*------ INDEX -------*/
+
+.header-text-container {
+    width: 100%;
+}
+
+.header-text span {
+    width: 90%;
+}
+
+.header-text {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(169, 238, 192);
+    background-image: cover;
+    background-position: center;
+
+
+    text-align: center;
+    color: rgb(19, 13, 11);
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 18px;
+}
+
+#about-header-img {
+    background-image: url('images/animals/sulcata_tortoise.png');
+}
+
+.learn-header {
+    text-align: center;
+    font-family: 'Sulphur Point', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(19, 13, 11);
+
+}
+
+.our-mission-header {
+    text-align: center;
+    font-family: 'Sulphur Point', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 3px;
+}
+
+.b {
+    color: rgb(169, 238, 192);
+}
+
+.three-boxes {
+    justify-content: space-between;
+    margin: 50px 40px;
+}
+
+.three-boxes .card {
+    width: 300px;
+    /* mobile */
+    margin: 0 auto;
+
+}
+
+.card-subHeading {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 26px;
+    font-family: 'Sulphur Point', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card-text {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 16px;
+    line-height: 20pt;
+}
+
+.three-boxes .card img {
+    width: 100%;
+    box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
+    border-radius: 15px 5px 15px 5px;
+}
+
+/*------ FOOTER -------*/
+
+.inner-main img {
+mix-blend-mode: luminosity;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: rgb(169, 238, 192);
+    padding: 30px;
+}
+
+footer .top {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-header {
+    font-size: 28;
+    font-family: 'Sulphur Point', sans-serif;
+    color: rgb(19, 13, 11);
+    bottom: 10%;
+}
+
+
+
+.contact-container {
+    font-family: 'Sulphur Point', sans-serif;
+    color: rgb(19, 13, 11);
+}
+
+footer .main {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Sulphur Point', sans-serif;
+    color: rgb(19, 13, 11);
+
+}
+
+footer .left .inner-main {
+
+    font-family: 'Sulphur Point', sans-serif;
+    color: rgb(19, 13, 11);
+
+}
+
+footer .inner-main {
+    width: 40%;
+
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3;
+    font-family: 'Sulphur Point', sans-serif;
+    color: rgb(19, 13, 11);
+}
+
+footer .footer-bottom ul {
+    display: flex;
+    font-size: 9;
+    font-family: 'Sulphur Point', sans-serif;
+    color: rgb(19, 13, 11);
+}
+
+/*------ DONATE ------*/
+
+.donor-info-form .row-container {
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    /* margin-left: 50px; */
+}
+
+.donate-amount-lbl {
+    background-color: #f9c244;
+    /* padding: 10px; */
+    width: 50px;
+    align-items: center;
+    border-radius: 15px 5px 15px 5px;
+    display: flex;
+
+
+
+}
+
+.donate-header {
+    font-size: 48px;
+    font-family: 'webfont';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    /* margin-left: 50px; */
+}
+
+.donate-subheader {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20pt;
+    /* margin: auto; */
+    /* margin-left: 50px; */
+
+}
+
+.donor-info-form .row-container {
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    margin-left: 50px;
+}
+
+.donor-info-form .row-container {
+
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column;
+            flex-wrap: wrap; */
+    width: 500px;
+    margin-bottom: 20px;
+    /* margin-left: 50px; */
+
+}
+
+/*------ LARGE SCREENS -------*/
+
+@media (min-width: 992px) {
+    .header-img h1 {
+        z-index: 1;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+    }
+
+    .blog-side-img {
+        display: block !important;
+    }
+
+    .header-img-text {
+        font-size: 48px;
+    }
+
+    .header-img-subtext {
+        font-size: 26px;
+        bottom: 20px;
+        left: 50px;
+    }
+
+    .header-text span {
+        width: 60%;
+    }
+
+    .text-on-image {
+        font-size: 40px;
+    }
+
+    .body-header {
+        font-size: 82px;
+    }
+
+    .blog-side-img {
+        display: none !important;
+    }
+
+
+
+    .large-width-25 {
+        width: 25%;
+    }
+
+    .large-width-33 {
+        width: 33.33333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+
+
+    .three-boxes .card {
+        width: 300px;
+    }
+
+    .three-boxes {
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+    .three-boxes .card img {
+
+        box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
+        border-radius: 15px 5px 15px 5px;
+    }
+}
+
+/*------ VERY LARGE SCREENS ------*/
+@media (min-width: 1400px) {
+    .three-boxes .card {
+        width: 30%;
+    }
+
+    .blog-side-img {
+        display: block !important;
+    }
+
+    .donate-side-img {
+        display: flex column;
+    }
+
+    .three-boxes {
+        display: flex !important;
+        justify-content: space-between;
+    }
+}
+
+/*----- MOBILE NAV ------*/
+@media (min-width: 540px) {
+    ul {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+}
+
