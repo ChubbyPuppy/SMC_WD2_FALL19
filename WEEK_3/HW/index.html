@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 3</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Oswald:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Good Boi, Shib</h1>
+            <img src="https://i.pinimg.com/originals/99/48/1b/99481b4430aba0c5eca64ca684c6a5d3.png" alt="HBM" id="icon">
+            <ul id="UL">
+                <li><a href="index.html" class="HL">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="float">
+        <div class="content">
+            <img src="https://grapee.jp/en/wp-content/uploads/shiba-inu-sakura.png" alt="shib">
+            <p class="mainP">
+                Shiba Inu does a smile.
+                This photo here is a jpeg file.
+                Chiggen nuggies, meaty good. 
+                Be a good boy, like a good boy should.
+
+                Shiba Inu wants a bone. 
+                Or maybe a treat, like an ice cream cone. 
+                Wan wan wan, bark bark bark. 
+                Shiba Inu scary like shark.
+            </p>
+        </div>
+    </div>
+    </main>
+    
+    <script>
+        
+        var hbm = document.getElementById('icon');
+        var list = document.getElementById('UL');
+
+        list.style.display = 'none';
+
+        hbm.addEventListener('click', function(){
+
+            if ( list.style.display == 'none' ){
+                list.style.display = 'block';
+            }
+            else {
+                list.style.display = 'none';
+            }
+        })
+    </script>
+</body>
+</html>

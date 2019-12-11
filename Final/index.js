@@ -5,14 +5,14 @@ var mobileMenuContainer = $('#mobile-menu');
 hamburgerIcon.click(toggleMobileMenu);
 
 
-function toggleMobileMenu() {
-    mobileMenuContainer.toggleClass('open');
+$('#hamburger-icon').click(function() {
+    $('#mobile-menu').slideToggle();
 
     // if has class name of 'open' {
     //     remove open from selected element
     // } else if it doesn't have class name of open {
     //     add 'open' to select element
     // }
-}
+})
 
 
