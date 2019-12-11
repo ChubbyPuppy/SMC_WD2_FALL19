@@ -462,6 +462,7 @@ header .bottom .desktop-menu {
 
 .inner-main img {
 mix-blend-mode: luminosity;
+width: 240px;
 }
 
 footer {
