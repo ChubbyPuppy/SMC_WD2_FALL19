@@ -1,0 +1,122 @@
+@import url(layout.css);
+
+body {
+    margin: 0px;
+    background-color: rgb(255, 220, 234);
+    background-image: url("https://i.pinimg.com/originals/0a/8e/44/0a8e446f975438ef28382145fde6e2cf.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: inherit ;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    margin: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+nav li {
+    margin: 0px 0px;
+    padding: 10px 0px;
+}
+
+nav {
+    background-color: rgb(221, 76, 161);
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+} 
+
+nav li:last-child {
+    border: none;
+}
+
+#icon {
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0px;
+    display: inline-block;
+    font-family: 'Mansalva', cursive;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0px;
+    display: inline-block;
+    font-family: 'Mansalva', cursive;
+    color: rgb(49, 8, 31);
+}
+
+p {
+    font-family: 'Lilita One', cursive;
+    font-size: 15px;
+    color: rgb(49, 8, 31);
+}
+
+a {
+    font-family: 'Mansalva', cursive;
+    color: rgb(49, 8, 31);
+}
+
+img {
+    border-bottom: 50px;
+    max-width: 100%;
+}
+
+.content {
+    padding: 10px;
+}
+
+.float {
+    height: 400px;
+}
+
+.HL {
+    color: black;
+}
+
+@media(min-width: 540px) {
+    nav ul li {
+        display: inline-block;
+        border-bottom: none;
+        border-right: 2px solid black;
+        padding: 5px 20px;
+    }
+
+    nav ul li:last-child {
+        border-right: none;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .mainP {
+        columns: 2;
+
+    }
+
+}
